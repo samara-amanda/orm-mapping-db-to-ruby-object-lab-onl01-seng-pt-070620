@@ -97,8 +97,8 @@ class Student
 
     s = DB[:conn].execute(sql, x)
 
-      self.new_from_db(i)
-    
+      self.new_from_db(s)
+
   end
 
 
