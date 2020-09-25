@@ -96,9 +96,9 @@ class Student
     SQL
 
     s = DB[:conn].execute(sql, x)
-
-      self.new_from_db(s)
-
+    s.map do |i|
+      self.new_from_db(i)
+    end
   end
 
 
