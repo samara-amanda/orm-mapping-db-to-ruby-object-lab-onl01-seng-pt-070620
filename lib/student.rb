@@ -106,6 +106,7 @@ class Student
     self.first_X_students_in_grade_10(1)
 
     DB[:conn].execute
+  end
 
 
   def self.all_students_in_grade_X(grade)
